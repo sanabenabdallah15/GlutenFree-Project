@@ -27,13 +27,13 @@ Login      </Button>
         <ModalHeader toggle={toggle}>Login</ModalHeader>
         <ModalBody>
   <InputGroup>
-    <Input placeholder="email"  onChange={(event)=>setEmail(event.target.value)} />
-    <InputGroupText>
+    <Input placeholder="email"  onChange={(event)=>setEmail(event.target.value)} style={{marginBottom:"15px",width:"50px"}} />
+    <InputGroupText style={{marginBottom:"15px"}}>
       @example.com
     </InputGroupText>
   </InputGroup>
   <InputGroup>
-    <Input placeholder="password" type='password' onChange={(event)=>setPassword(event.target.value)}/>
+    <Input placeholder="password" type='password' onChange={(event)=>setPassword(event.target.value)} style={{marginBottom:"15px",width:"50px"}}/>
   </InputGroup>
   <InputGroup>
 
@@ -48,7 +48,7 @@ Login      </Button>
 </InputGroup> 
         </ModalBody>
         <ModalFooter>
-          <Button color="primary" onClick={handleLogin}>
+          <Button color="primary" onClick={handleLogin} style={{backgroundColor:"green"}}>
 Login          </Button>{' '}
           <Button color="secondary" onClick={toggle}>
             Cancel

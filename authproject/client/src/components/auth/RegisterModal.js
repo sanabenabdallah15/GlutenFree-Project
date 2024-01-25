@@ -137,26 +137,26 @@ function RegisterModal() {
       <Modal isOpen={modal} toggle={toggle}>
         <ModalHeader toggle={toggle}>Register</ModalHeader>
         <ModalBody>
-        <InputGroup>
-    <Input placeholder="name" onChange={(event)=>setName(event.target.value)} />
+    <InputGroup>
+    <Input placeholder="name" onChange={(event)=>setName(event.target.value)}style={{marginBottom:"15px",width:"50px"}}/>
   </InputGroup>
   <InputGroup>
-    <Input placeholder="lastName" onChange={(event)=>setLastName(event.target.value)}/>
+    <Input placeholder="lastName" onChange={(event)=>setLastName(event.target.value)}style={{marginBottom:"15px",width:"50px"}}/>
   </InputGroup>
   <InputGroup>
-    <Input placeholder="email" onChange={(event)=>setEmail(event.target.value)} />
-    <InputGroupText>
+    <Input placeholder="email" onChange={(event)=>setEmail(event.target.value)}style={{marginBottom:"15px",width:"50px"}} />
+    <InputGroupText style={{marginBottom:"15px"}}>
       @example.com
     </InputGroupText>
   </InputGroup>
   <InputGroup>
-    <Input placeholder="password" type='password' onChange={(event)=>setPassword(event.target.value)}/>
+    <Input placeholder="password" type='password' onChange={(event)=>setPassword(event.target.value)}style={{marginBottom:"15px",width:"50px"}}/>
   </InputGroup>
   <InputGroup>
-    <Input placeholder="adresse"  onChange={(event)=>setAdresse(event.target.value)}/>
+    <Input placeholder="adresse"  onChange={(event)=>setAdresse(event.target.value)}style={{marginBottom:"15px",width:"50px"}}/>
   </InputGroup>
   <InputGroup>
-    <Input placeholder="telephone"  onChange={(event)=>setTelephone(event.target.value)}/>
+    <Input placeholder="telephone"  onChange={(event)=>setTelephone(event.target.value)}style={{marginBottom:"15px",width:"50px"}}/>
   </InputGroup>
   <InputGroup>
 
@@ -173,12 +173,12 @@ function RegisterModal() {
           <InputGroup>
           <InputGroup>
             <input type="checkbox" checked={isAdmin} onChange={() => setIsAdmin(!isAdmin)} aria-label="controlled" />
-            <label>are you a seller ?</label>
+            <label style={{marginLeft:"10px"}}>are you a seller ?</label>
           </InputGroup>
           </InputGroup>
         </ModalBody>
         <ModalFooter>
-          <Button color="primary" onClick={handleRegister}>
+          <Button color="primary" onClick={handleRegister}style={{backgroundColor:"green"}}>
             register
           </Button>{' '}
           <Button color="secondary" onClick={toggle}>

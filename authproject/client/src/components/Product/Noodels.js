@@ -103,7 +103,7 @@ function Noodels () {
                     <div className="text-center mb-4">
                             <h2 className="section-title px-5"><span className="px-2">Noodels</span></h2>
                         </div>
-                    <div className="container-fluid pt-5"style={{marginRight: "-15px",marginLeft: "-15px;"}}>
+                    <div className="container-fluid pt-5" style={{display:"flex",flex:"wrap",marginRight: "-15px",marginLeft: "-15px;"}}>
                         
                         {noodels && noodels.map(filteredCategory=> (
                        <PastaCard filteredCategory={filteredCategory}/>

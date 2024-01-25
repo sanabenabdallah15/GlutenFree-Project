@@ -93,7 +93,7 @@ const handleLogout=()=>{
                   </div>
                   <EditUser el={user }style={{position:" relative",paddingBottom:" 12px",paddingTop: "12px",padding: "16px",alignItems: "center",display:"flex",color:"inherit"}}>
                   </EditUser>
-                  <a href="/"style={{fontSize:"15px",marginTop:"10%"}}>back Home</a>
+                  <a href="/"style={{fontSize:"20px",marginLeft:"80%",color:"green"}}>back Home</a>
          </div>                                
         </div>                                   
     </section>
